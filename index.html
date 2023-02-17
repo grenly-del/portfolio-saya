@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Belajar Coding</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+		<!-- Navbar -->
+		<div class="navbar">
+			<div class="container">
+				<div class="navbar-logo">
+					PORT<span>FOLIO</span>
+					</div>
+					<div class="navbar-nav">
+						<a href="#home">HOME</a>
+						<a href="#about">ABOUT</a>
+						<a href="#project">PROJECT</a>
+						<a href="#hobi">HOBI</a>
+						<a href="#contact">CONTACT</a>
+					</div>
+			</div>
+		</div>
+		<!-- navbar selesai -->
+
+		<!-- HERO -->
+		<section class="hero" id="home">
+			<div class="container">
+				<div class="tulisan">
+					<h1>Saya <span>Grantly Sorongan</span></h1>
+					<h3>Dan ini adalah PORTFOLIO Saya</h3>
+					<a href="#" class="tombol">Selengkapnya>></a>
+				</div>
+			</div>
+		</section>
+		
+		<!-- HERO SELESAI -->
+
+		<!-- about -->
+		<section class="about" id="about">
+			<div class="container">
+				<h2 class="judul">
+					About
+				</h2>
+				<div class="content">
+					<div class="content-col left">
+						<img src="myFoto.jpeg" alt="">
+					</div>
+					<div class="content-col right">
+						<h1>Saya <span>Grantly Sorongan</span></h1>
+						<p>Saya adalah orang indonesia,  saya lahir di sorong. saya 
+							besar di sulawesi utara, Manado. Dari kecil saya sangat 
+							tertarik dengan dunia IT / Komputer. Saya sudah mulai
+							belajar tentang komputer pada saat saya masih ber-
+							sekolah SD, pada saat itu saya suka bermain di Warnet
+							dan saat itulah saya mulai tertarik dengan komputer.
+							Dan akhirnya pada saat saya SMK saya belajar lebih dalam 
+							tentang Komputer.
+							</p>
+						<div class="menu-bar">
+							<div class="bar bar-1">
+								<h2 class="title-bar design active-link" onclick="opentab('design')">Designer</h2>
+								<h2 class="title-bar  editor" onclick="opentab('editor')">Video Editor</h2>
+								<h2 class="title-bar webDevelopment" onclick="opentab('webDevelopment')">Web Development</h2>
+							</div>
+							<div class="bar bar-2">
+								<p class="contents design active-content" id="design">Awal mula saya kenal dengan dunia Design, saat saya
+									masih duduk di bangku SMP. Saat itu saya sempat
+									mempunyai channel Youtube, dan akhirnya saya belajar
+									mengenai Design (Photoshop)</p>
+								<p class="contents editor" id="editor">Sama seperti Design, awal mula saya kenal dengan edit video
+									saat saya masih duduk di bangku SMP, yang pada saat itu
+									saya mempunyai Channel Youtube</p>
+								<p class="contents webDevelopment" id="webDevelopment">Saat mulai dewasa saya ingin terjun lebih jauh lagi dalam
+									dunia komputer. dan akhirnya saya masuk SMK jurusan Multimedia.
+									Dan saat SMK saya belajar tentang dasar pemograman, dan akhirnya
+									saya lebih mendalami tentang pemograman.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+		<!-- about selesai -->
+		
+		<!-- project -->
+
+		<section class="project" id="project">
+			<div class="container">
+				<div class="title">Project</div>
+				<div class="row">
+					<div class="box">
+						<img src="programmer.jpg" alt="">
+						<div class="works">
+							<h1 class="tema">MEMBUAT WEBSITE</h1>
+							<p>saya senang membuat
+							website, untuk mengisi
+							kekosongan saat di rumah
+							dan juga menambah ilmu</p>
+							<a href="#"><i data-feather="code" class="icon"></i></a>
+						</div>
+					</div>
+					<div class="box">
+						<img src="designer.jpg" alt="">
+						<div class="works">
+							<h1 class="tema">DESIGN</h1>
+							<p>saya sering mendesign,foto
+								flayer, banner, dan brosur.
+								Untuk menambah ilmu</p>
+							<a href="#"><i data-feather="edit" class="icon"></i></a>
+						</div>
+					</div>
+					<div class="box">
+						<img src="video editor.jpg" alt="">
+						<div class="works">
+							<h1 class="tema">EDIT VIDEO</h1>
+							<p>saya jarang untuk edit video
+									karena kurangnya bahan
+									untuk mengedit, dan juga
+									kurang dibutuhkan
+							</p>
+							<a href="#"><i data-feather="video" class="icon"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="btn">
+					<a href="#">LEBIH LANJUT>></a>
+				</div>
+			</div>
+		</section>
+
+		<!-- project selesai -->
+
+		<!-- HOBI -->
+
+		<section class="hobi" id="hobi">
+			<div class="container">
+				<div class="title">HOBI</div>
+				<div class="content">
+					<div class="left">
+						<img src="futsal.jpg" class="preview-img active-img">
+						<img src="olahraga.jpg" class="preview-img" id="olahragaImg">
+						<img src="mainGame.jpg" class="preview-img" id="mainGameImg">
+						<img src="nonton.jpg" class="preview-img" id="nontonImg">
+						<img src="coding.jpg" class="preview-img" id="codingImg">
+					</div>
+					<div class="right">
+						<div class="tema">
+							<div class="box active" id="hobi">
+								<h2>HoBi</h2>
+								<p>Hobi adalah sesuatu hal yang sering saya lakukan dan saya sukai, hobi juga adalah salah satu cara untuk saya healing. Setiap orang mempunyai hobi masing-masing. Berikut ini adalah hobi saya.</p>
+							</div>
+							<div class="box" id="olahraga">
+								<h2>Olahraga</h2>
+								<ul>
+									<li>Olahraga adalah kegiatan yang bagus untuk di lakukan setiap hari.</li>
+									<li>Namun saya jarang melakukan Olahraga.</li>
+									<li>Tapi ada beberapa olahraga yang saya senangi. Diantaranya, Basket, Bola, Dan Raket</li>
+									<li>Diluar itu saya juga suka bermain Biliard.</li>
+								</ul>
+							</div>
+							<div class="box" id="mainGame">
+								<h2>Main Game</h2>
+								<ul>
+									<li>Bermain game adalah hal yang paling saya senangi.</li>
+									<li>Game yang saya senangi adalah game-game Komputer. Diantaranya, POINT BLANK (PB), DOTA, MINECRAFT, dan GTA.</li>
+									<li>Namun saya juga sering bermain Game Mobile. Diataranya, MOBILE LEGENDS, PUBG MOBILE, dan FIFA.</li>
+								</ul>
+							</div>
+							<div class="box" id="nonton">
+								<h2>Nonton</h2>
+								<ul>
+									<li>Belajar, salah satu tontonan saya adalah dengan menonton tutorial-tutorial
+									Design, Edit Video, dan Coding</li>
+									<li>Hiburan, Saya juga sering menonton acara-acara Hiburan di YouTube.</li>
+									<li>Film, Selain nonton YouTube saya juga sering nonton film-film yang bergenre Action/laga</li>
+								</ul>
+							</div>
+							<div class="box" id="coding">
+								<h2>Belajar</h2>
+								<ul>
+									<li>Sebenarnya saya orang yang malas dengan belajar, saya lebih suka bermain. Sama seperti orang-orang pada umumnya.</li>
+									<li>Namun saya sangat tertarik dengan dunia IT atau Dunia Teknologi.</li>
+									<li>Dan akhirnya saya belajar lebih dalam lagi tentang IT(INFORMATION TECHNOLOGY)</li>
+									<li>Saya mempelajarinya dari berbagai sumber. salah satunya YouTube</li>
+								</ul>
+							</div>
+						</div>
+
+
+						
+						<div class="btn-select">
+							<h2 class="btns" onclick="nextPreview('olahraga', 'olahragaImg')">Olahraga</h2>
+							<h2 class="btns" onclick="nextPreview('mainGame', 'mainGameImg')">Main Game</h2>
+							<h2 class="btns" onclick="nextPreview('nonton', 'nontonImg')">Nonton</h2>
+							<h2 class="btns" onclick="nextPreview('coding', 'codingImg')">Belajar</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- HOBI SELESAI -->
+
+		<section class="contact">
+			<div class="container">
+				<h2 class="title">Contact</h2>
+				<div class="content">
+					<div class="left-content">
+						
+					</div>
+					<div class="right-content">
+					
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- selesai contact -->
+
+
+		<div class="Up">
+			<div class="container">
+				<a href="#home" class="btnToUp">V</a>
+			</div>
+		</div>
+
+		<!-- js -->
+
+
+		<!-- icons -->
+		<script>
+      	feather.replace()
+   		 </script>
+
+		<script>
+
+			const tablinks = document.getElementsByClassName('title-bar');
+			const tabContents = document.getElementsByClassName('contents');
+			const btnSelect = document.getElementsByClassName('btns');
+			const btnSelects = document.getElementsByClassName('btn-select');
+			const paragraf = document.getElementsByClassName('paragraf');
+			const boxs = document.getElementsByClassName('box');
+			const imgs = document.getElementsByClassName('preview-img');
+
+			function opentab(tabname) {
+	
+				for(tablink of tablinks) {
+					tablink.classList.remove("active-link");
+					// console.log(tablink)
+				}
+				for(tabContent of tabContents) {
+					tabContent.classList.remove('active-content');
+				}
+				
+				event.target.classList.add("active-link");
+				// const getElementById = document.getElementById(tabname);
+
+				// document.getElementById(tabname).classList.add('active');
+
+				document.getElementById(tabname).classList.add('active-content');
+				// document.getElementById(tabname).classList.add('active');
+			}
+
+	
+
+			function nextPreview(next, img) {
+				
+				for(btn of btnSelect) {
+					btn.classList.remove("active");
+				}
+				for(box of boxs) {
+					box.classList.remove('active');
+				}
+				for(imge of imgs) {
+					imge.classList.remove('active-img');
+				}
+				event.target.classList.add("active");
+				document.getElementById(next).classList.add('active');
+				document.getElementById(img).classList.add('active-img');
+			}
+
+
+
+		</script>
+
+</body>
+</html>

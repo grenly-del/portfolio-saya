@@ -1,0 +1,546 @@
+* {
+	margin: 0;
+	padding: 0;
+/*	color: #fff;*/
+	font-family: sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	padding: 0 50px;
+	position: relative;
+}
+
+
+/* navbar */
+
+html {
+	scroll-behavior: smooth;
+}
+
+.navbar .container {
+	display: flex;
+	justify-content: space-between;
+	color: rgb(240, 14, 14);
+	padding-top: 1rem;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	z-index: 999;
+}
+
+.navbar .navbar-logo {
+	font-size: 1.5rem;
+	cursor: pointer;
+	font-weight: 800;
+}
+.navbar .navbar-logo span {
+	color: #fff;
+	font-weight: 800;
+}
+
+.navbar .navbar-nav {
+	display: inline-block;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+.navbar .navbar-nav a{
+	margin: 0 1rem;
+	color:#fff;
+}
+
+.navbar .navbar-nav :hover{
+	color:rgb(240, 14, 14)
+}
+
+/* akhir navbar */
+
+/* HERO */
+
+.hero .container{
+	height: 100vh;
+	width: 100%;
+	background: url('bg.jpg') no-repeat;
+	background-size: cover;
+	background-position: -100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 0;
+	background-attachment: fixed;
+}
+
+.hero::after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	background: linear-gradient(rgba(19, 18, 18, 0)4%, rgba(5, 5, 5, 1) 100%);
+	bottom: 0;
+}
+
+.hero .container {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	/* background-color: #fff; */
+	/* align-items: center; */
+}
+
+
+.hero .container .tulisan {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	color: #fff;
+}
+
+.hero .container .tulisan h1 {
+	font-size: 3.5rem;
+}
+
+.hero .container .tulisan h3 {
+	font-size: 2.5rem;
+}
+
+.hero .container .tulisan span {
+	color: rgb(240, 14, 14);
+}
+
+.hero .container .tulisan .tombol {
+	font-size: 1.7em;
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: auto;
+	border-radius: 10px;
+	padding: 0.5em 1em;
+	color: #fff;
+	background: rgb(240, 14, 14);
+	box-sizing: content-box;
+	border: 3px solid red;
+	transition: 0.3s;
+}
+
+.hero .container .tulisan .tombol:hover {
+	background-color: transparent;
+}
+
+/* akhir HERO */
+
+/* ABOUT */
+
+.about
+/*.project,
+.hobi*/ {
+	background-color: #121212;
+	color: #fff;
+	padding: 50px 0 100px;
+	/*text-align: center;*/
+}
+
+.about .container {
+	display: flex;
+	flex-direction: column;
+	/* flex-wrap: wrap; */
+}
+
+.about .judul{
+	text-align: center;
+	font-size: 2.5rem;
+	margin-bottom: 50px;
+	position: relative;
+	/* background-color: rebeccapurple; */
+}
+
+.about .judul::before {
+	content: '';
+	position: absolute;
+	width: 15%;
+	height: 4px;
+	background-color: rgb(235, 24, 24);
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.about .judul::after,.hobi .title::after {
+	content: 'Tentang saya';
+	position: absolute;
+	/* background-color: #fff; */
+	color: #fff;
+	font-size: .5em;
+	bottom: -25px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.about .content {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+
+
+.about .content .right {
+	flex-basis: 50%;
+	text-align: start;
+	margin-top: 2em;
+}
+
+.about .content .right h1 {
+	margin-bottom: 3px;
+	font-weight: 800;
+	font-size: 2em;
+}
+
+.about .content .right h1 span {
+	color:rgb(240, 14, 14);
+	font-weight: 800;
+}
+
+.about .content .right p {
+	font-weight: 400;
+	margin-bottom: 60px;
+	font-size: 1.2em;
+}
+
+.about .content .right .menu-bar .bar {
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+	justify-content: space-between;
+}
+
+.about .content .right .menu-bar h2 {
+	font-size: 1.2em;
+	margin-bottom: 20px;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-bottom: 5px;
+	transition: height 0.5s;
+	/* background-color: red; */
+}
+
+.about .content .right .menu-bar h2::after {
+	content:'';
+	width: 0;
+	height: 3px;
+	background-color: red;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: 0.3s;
+}
+
+.about .content .right .menu-bar h2:hover::after {
+	content: '';
+	width: 50%;
+}
+
+.about .content .right .menu-bar h2.active-link::after {
+	content: '';
+	width: 50%;
+}
+
+
+.about .content .right .menu-bar .bar-2 .contents {
+	display: none;
+}
+
+.about .content .right .menu-bar .bar-2 .contents.active-content {
+	display: block;
+}
+.about .content img {
+	width: 80%;
+
+}
+
+.about .content .left {
+	flex-basis: 45%;
+}
+
+/* about end */
+
+.project {
+	padding: 50px 0;
+	background-color: #050505;
+	color: #fff;
+}
+
+.project .title,.hobi .title,.contact .title {
+	font-size: 2.5rem;
+	margin-bottom: 1em;
+	text-align: center;
+	position: relative;
+}
+
+.project .title::before,.hobi .title::before,.contact .title::before {
+	content: '';
+	position: absolute;
+	width: 15%;
+	height: 4px;
+	background-color: rgb(235, 24, 24);
+	bottom: -1px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.project .title::after, .contact .title::after {
+	content: 'Projek saya';
+	position: absolute;
+	/* background-color: #fff; */
+	color: #fff;
+	font-size: .5em;
+	bottom: -25px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.project .row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 10px;
+	margin-top: 20px;
+}
+
+.project .row .box {
+	background-color: #121212;
+	border-radius: 20px;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+.project .row .box img {
+	/*position: absolute;*/
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	transition: 0.5s;
+}
+
+.project .row .box .works {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px 10px;
+	bottom: -100%;
+	left: 0;
+	transition: bottom 0.5s;
+}
+
+.project .row .box .works a {
+	margin: 15px 0;
+	color: #ff004f;
+	background-color: white;
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+
+
+.project .row .box:hover img{
+	transform: scale(1.2);
+}
+
+.project .row .box:hover .works {
+	bottom: 0;
+}
+.project .row .box .tema {
+	font-size: 1.5em;
+	margin: 10px 0;
+}
+
+.project .row .box p {
+	font-size: 1.1em;
+}
+
+.project .container .btn{
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.project .container .btn a {
+	color: #fff;
+	padding: 1.2em 2em;
+	border-radius: 50px;
+	border: 3px solid red;
+	background-color: red;
+	transition: 0.2s;
+}
+
+.project .container .btn a:hover {
+	background-color: transparent;
+}
+
+
+.hobi {
+	background-color: #121212;
+	color: #fff;
+	padding: 50px 0;
+	position: relative;
+}
+
+.hobi .title::after{
+	content: 'Hobi saya';
+}
+
+.hobi .content .left {
+	position: relative;
+	background-color: #fff;
+	padding: 30px 12px 50px;
+	/*overflow: hidden;*/
+	border-radius: 30px;
+}
+
+.hobi .content {
+	display: grid;
+	grid-template-columns: 1.5fr 1.3fr;
+	grid-template-areas: 'left right';
+	grid-gap: 50px;
+	padding: 20px 0;
+}
+.hobi .content .left {
+	grid-area: right;
+}
+
+.hobi .content .right {
+	grid-area: left;
+	display: flex;
+	flex-direction: column ;
+	justify-content: space-between;
+}
+.hobi .content .preview-img {
+	display: none;
+}
+
+.hobi .content .preview-img.active-img {
+	display: block;
+	border-radius: 30px;
+	border: 10px #000;
+	border-style: double;
+	width: 100%;
+	height: 100%;
+}
+
+
+.hobi .content .right .tema .box{
+	display: none;
+}
+
+.hobi .content .right .tema .box.active {
+	display: block
+}
+
+.hobi .content .right .tema h2 {
+	font-weight: 600;
+	font-size: 2.1em;
+}
+
+.hobi .content .right p {
+	font-weight: 400;
+	/*margin: 10px 0 25px;*/
+}
+
+.hobi .content .right .btn-select {
+	display: flex;
+	flex-wrap: wrap;
+	gap:  10px;
+}
+
+.hobi .content .right .btn-select h2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2em;
+	font-weight: 500;
+	/*margin-right: 20px;*/
+	position: relative;
+	width: 130px;
+	height: 45px;
+	border-radius: 50px;
+	cursor: pointer;
+	border: 3px solid #ee1e1e;
+}
+
+.hobi .content .right .btn-select h2:hover {
+	background-color: #ee1e1e;
+}
+
+.hobi .content .right .btn-select h2.active{
+	background-color: #ee1e1e;
+}
+
+.hobi .content .right .tema p {
+	font-size: 1.2em;
+	font-weight: 200;
+}
+
+.hobi .content .right .tema .box ul li {
+	list-style: none;
+	font-weight: 100;
+	font-size: 1.1em;
+}
+
+.contact{
+	background-color: #050505;
+	color: #fff;
+	padding: 50px 0 100px;
+}
+
+.contact .title::after {
+	content: 'Kontak saya';
+} 
+
+
+
+
+/*btn To UP*/
+
+.Up .container {
+	background-color: transparent;
+	width: 1px;
+	/*height: 50px;*/
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+
+}
+
+.Up .container .btnToUp {
+	display: inline-block;
+	background-color: red;
+	padding: 15px 18px;
+	border-radius: 5px;
+	justify-content: center;
+	align-items: center;
+	margin: 45px 15px;
+	cursor: pointer;
+	color: #fff;
+	border:  1px solid red;
+	transform: rotate(180deg);
+}
+
